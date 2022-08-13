@@ -98,6 +98,11 @@ class StoryMenuState extends MusicBeatState
 			if (!FlxG.sound.music.playing)
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		}
+#if android 
+
+addVirtualPad(FULL, A_B); 
+
+#end
 
 		persistentUpdate = persistentDraw = true;
 
